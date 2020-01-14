@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  dev:
+    build:
+      context: .
+    working_dir: /code
+    volumes:
+      - .:/code
+    networks:
+      - default_network
+    environment:
+      STORAGE_API_URL: $STORAGE_API_URL
+      STORAGE_API_TOKEN: $STORAGE_API_TOKEN
+      SNOWFLAKE_HOST: $SNOWFLAKE_HOST
+      SNOWFLAKE_USERNAME: $SNOWFLAKE_USERNAME
+      SNOWFLAKE_PASSWORD: $SNOWFLAKE_PASSWORD
+
+networks:
+  default_network:
