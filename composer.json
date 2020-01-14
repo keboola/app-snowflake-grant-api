@@ -1,0 +1,30 @@
+{
+    "name": "keboola/snowflake-grant-api",
+    "description": "Snowflake API for grants privilegies",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Keboola",
+            "email": "devel@keboola.com"
+        }
+    ],
+    "require": {
+        "keboola/php-csv-db-import": "^5.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.5",
+        "keboola/coding-standard": "^9.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keboola\\SnowflakeGrantAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Keboola\\SnowflakeGrantAPI\\Tests\\": "tests/"
+        }
+    }
+}
